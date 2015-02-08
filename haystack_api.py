@@ -15,7 +15,7 @@ class HaystackApi(protorpc.remote.Service):
         if request.from_datastore:
             my_quote = request
         else:
-            my_quote = DbEvent(title=request.title, address=request.address, from_date_time=request.from_date_time, to_date_time=request.to_date_time, category=request.category)
+            my_quote = DbEvent(title=request.title, address=request.address, from_date_time=request.from_date_time, to_date_time=request.to_date_time, category=request.category, description=request.description)
         my_quote.put()
         return my_quote
     
