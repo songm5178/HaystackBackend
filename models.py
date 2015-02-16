@@ -7,7 +7,7 @@ from endpoints_proto_datastore.ndb.model import EndpointsModel
 from google.appengine.ext import ndb
 
 class DbEvent(EndpointsModel):
-    _message_fields_schema = ("entityKey", "title", "address", "from_date_time", "to_date_time", "category", "description", "last_touch_date_time")
+    _message_fields_schema = ("entityKey", "title", "address", "from_date_time", "to_date_time", "category", "description", "last_touch_date_time", "comments")
     title = ndb.StringProperty()
     address = ndb.StringProperty()
     from_date_time = ndb.DateTimeProperty()

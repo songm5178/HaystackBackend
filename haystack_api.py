@@ -7,7 +7,7 @@ import endpoints
 import protorpc
 from models import DbEvent
 
-@endpoints.api(name="haystack", version="v2", description="Haystack Api")
+@endpoints.api(name="haystack", version="v3", description="Haystack Api")
 class HaystackApi(protorpc.remote.Service):
     
     @DbEvent.method(name="dbevent.insert", path="haystack/dbevent/insert", http_method="POST")
