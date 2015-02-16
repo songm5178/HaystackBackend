@@ -14,10 +14,11 @@ class DbEvent(EndpointsModel):
     to_date_time = ndb.DateTimeProperty()
     category = ndb.StringProperty()
     description = ndb.StringProperty()
+    comments = ndb.StringProperty(repeated=True)
     last_touch_date_time = ndb.DateTimeProperty(auto_now=True)
     
-class DbComment(EndpointsModel):
-    _message_fields_schema = ("entityKey" , "event_id", "comment", "last_touch_date_time")
-    event_id = ndb.StringProperty()
-    comment = ndb.StringProperty()
-    last_touch_date_time = ndb.DateTimeProperty(auto_now=True)
+# class DbComment(EndpointsModel):
+#     _message_fields_schema = ("entityKey" , "event_id", "comment", "last_touch_date_time")
+#     event_id = ndb.StringProperty()
+#     comment = ndb.StringProperty()
+#     last_touch_date_time = ndb.DateTimeProperty(auto_now=True)
