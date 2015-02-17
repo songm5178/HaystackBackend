@@ -7,7 +7,7 @@ import endpoints
 import protorpc
 from models import DbEvent
 
-@endpoints.api(name="haystack", version="v3", description="Haystack Api")
+@endpoints.api(name="haystack", version="v1", description="Haystack Api")
 class HaystackApi(protorpc.remote.Service):
     
     @DbEvent.method(name="dbevent.insert", path="haystack/dbevent/insert", http_method="POST")
@@ -22,7 +22,14 @@ class HaystackApi(protorpc.remote.Service):
     @DbEvent.query_method(name="dbevent.list", path="haystack/dbevent/list", http_method="GET", query_fields=("limit", "order", "pageToken"))
     def dbevent_list(self, query):
         return query
-    
+
+    @DbEvent.method(request_fields=("entityKey",), response_fields=("comments",), name="dbevent.comments", path="haystack/dbevent/comments/{entityKey}", http_method="GET")
+    def dbevent_list_one(self, query):
+        if not query.from_datastore:
+            raise endpoints.NotFoundException('Event not found.')
+        query.comments = query.get_comments()
+        return query
+
     @DbEvent.method(name="dbevent.delete", path="haystack/dbevent/{entityKey}", http_method="DELETE",
                        request_fields=("entityKey",))
     def dbevent_delete(self, request):
