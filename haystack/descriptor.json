@@ -1,13 +1,13 @@
 {
   "files": [
     {
-      "downloadUrl": "/downloads/haystack/v3/20150217175911/java/1.19.1/tombn_songm_haystack_appspot_com-haystack-v3-20150217175911-java-1.19.1-sources.jar", 
-      "path": "tombn_songm_haystack_appspot_com-haystack-v3-20150217175911-java-1.19.1-sources.jar", 
+      "downloadUrl": "/downloads/haystack/v1/20150218225650/java/1.19.1/tombn_songm_haystack_appspot_com-haystack-v1-20150218225650-java-1.19.1-sources.jar", 
+      "path": "tombn_songm_haystack_appspot_com-haystack-v1-20150218225650-java-1.19.1-sources.jar", 
       "type": "source", 
-      "timestamp": "2015-02-17 17:59"
+      "timestamp": "2015-02-18 22:56"
     }, 
     {
-      "path": "tombn_songm_haystack_appspot_com-haystack-v3-20150217175911-java-1.19.1.jar.properties", 
+      "path": "tombn_songm_haystack_appspot_com-haystack-v1-20150218225650-java-1.19.1.jar.properties", 
       "type": "android.properties"
     }
   ], 
@@ -22,7 +22,7 @@
   "maven": {
     "group_id": "com.appspot.tombn_songm_haystack", 
     "artifact_id": "haystack", 
-    "version": "v3-1.19.1-SNAPSHOT"
+    "version": "v1-1.19.1-SNAPSHOT"
   }, 
   "dependencies": [
     {
@@ -671,8 +671,8 @@
     }
   ], 
   "ownerName": "tombn_songm_haystack_appspot_com", 
-  "version": "v3", 
+  "version": "v1", 
   "language_version": "1.19.1", 
-  "id": "haystack:v3", 
-  "revision": 20150217175911
+  "id": "haystack:v1", 
+  "revision": 20150218225650
 }
