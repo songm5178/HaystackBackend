@@ -27,6 +27,11 @@ class DbEvent(EndpointsModel):
             return []
         return self.comments
     
+    def get_likes(self):
+        if not self.likes:
+            return []
+        return self.likes
+    
 # class DbComment(EndpointsModel):
 #     _message_fields_schema = ("entityKey" , "event_id", "comment", "last_touch_date_time")
 #     event_id = ndb.StringProperty()
