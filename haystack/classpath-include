@@ -1,4 +1,4 @@
-	<classpathentry kind="lib" path="libs/google-api-services-haystack-v1-rev20150218233735-1.19.1.jar" sourcepath="libs-sources/google-api-services-haystack-v1-rev20150218233735-1.19.1-sources.jar"/>
+	<classpathentry kind="lib" path="libs/google-api-services-haystack-v1-rev20150219015048-1.19.1.jar" sourcepath="libs-sources/google-api-services-haystack-v1-rev20150219015048-1.19.1-sources.jar"/>
 	<classpathentry kind="lib" path="libs/google-api-client-1.19.1.jar" sourcepath="libs-sources/google-api-client-1.19.1-sources.jar"/>
 	<classpathentry kind="lib" path="libs/google-api-client-android-1.19.1.jar" sourcepath="libs-sources/google-api-client-android-1.19.1-sources.jar"/>
 	<classpathentry kind="lib" path="libs/google-api-client-appengine-1.19.1.jar" sourcepath="libs-sources/google-api-client-appengine-1.19.1-sources.jar"/>

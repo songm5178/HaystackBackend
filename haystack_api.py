@@ -23,7 +23,7 @@ class HaystackApi(protorpc.remote.Service):
     def dbevent_list(self, query):
         return query
 
-    @DbEvent.method(request_fields=("entityKey",), response_fields=("entityKey", "title", "address", "from_date_time", "to_date_time", "category", "description", "comments", "comment_size", "last_touch_date_time", "lat", "lon", "likes", "likes_size", "created_date_time"), name="dbevent.one", path="haystack/dbevent/one/{entityKey}", http_method="GET")
+    @DbEvent.method(request_fields=("entityKey",), response_fields=("comments", "likes"), name="dbevent.one", path="haystack/dbevent/one/{entityKey}", http_method="GET")
     def dbevent_one(self, query):
         if not query.from_datastore:
             raise endpoints.NotFoundException('Event not found.')
